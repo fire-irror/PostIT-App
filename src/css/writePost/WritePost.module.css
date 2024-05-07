@@ -10,6 +10,7 @@
 .remainLetter{
   display: inline-block;
   margin-left: 3%;
+  color: #BABABA;
 }
 
 .WrapTextarea{
@@ -46,4 +47,12 @@
   outline: none;
   border-width: 2px;
   padding: 5%;
+}
+
+.NextBtn {
+  position: fixed;
+  top: 5%;
+  left: 80%; 
+  color: #686864;
+  border: none;
 }
