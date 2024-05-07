@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import styles from '../../css/writePost/WritePost.module.css'
+import { useNavigate } from 'react-router-dom';
 
 const WritePost: React.FC = () => {
+
   //포스트잇의 내용을 저장하기 위함
   const [postContent, setPostcontent] = useState<String>('');
-  const [isDone, setIsDone] = useState<boolean>(false)
+
+  const navigate = useNavigate()
 
   const handleWirte = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const inputValue: string = event.target.value;
@@ -19,7 +22,7 @@ const WritePost: React.FC = () => {
   }
 
   const handleDoneBtn = () => {
-    setIsDone(true);
+    navigate('/');
   }
 
   //남은 글자 수 계산
@@ -41,16 +44,10 @@ const WritePost: React.FC = () => {
           />
         </div>
       </div>
-
-      {!isDone && (
+      
         <div className={styles.WrapDoneBtn}>
           <button className={styles.doneBtn} onClick={handleDoneBtn}>작성완료</button>
         </div>
-      )}
-      
-      {isDone && (
-        <div className={styles.NextBtn}>다음</div>
-      )}
     </div>
   )
 }
