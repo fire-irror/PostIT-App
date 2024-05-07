@@ -1,0 +1,43 @@
+
+.content{
+  position: absolute;
+  bottom: 0; /* 하단으로 이동 */
+  background-color: #e2e2e2;
+  height: 290px;
+  width: 375px;
+}
+
+.selectPost{
+  background-color: #FFE16F;
+  width: 25%;
+  border-radius: 5px;
+  padding: 2%;
+  font-size: 11px;
+  text-align: center;
+  margin: 4.5%;
+}
+
+.wrapPostImg{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  
+}
+
+.post1,
+.post2,
+.post3,
+.post4,
+.post5,
+.post6,
+.post7,
+.post8{
+  margin: 1.5%;
+}
+
+.post5,
+.post6,
+.post7,
+.post8{
+  margin-top: 4%;
+}
