@@ -4,6 +4,12 @@
   color: #424242;
   margin-top: 28%;
   margin-left: 10%;
+  display: inline-block;
+}
+
+.remainLetter{
+  display: inline-block;
+  margin-left: 3%;
 }
 
 .WrapTextarea{
