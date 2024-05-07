@@ -7,8 +7,8 @@
 }
 
 .StartImg{
-  margin-top: 8%;
-  margin-left: 5%;
+  margin-top: 10%;
+  margin-left: 7%;
 }
 
 
@@ -28,14 +28,15 @@
   font-family: 'NanumSquareNeo-Variable', sans-serif;
   background-color: #12619C;
   color: #fff;
-  padding: 5%;
+  padding: 4%;
   border-radius: 16px;
   border: none;
-  width: 310px;
+  width: 300px;
   font-size: 17px;
   font-weight: 100;
 }
 
 .WrapStartBtn{
   text-align: center;
+  margin-top: 5%;
 }
