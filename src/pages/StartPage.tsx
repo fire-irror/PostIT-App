@@ -1,4 +1,4 @@
-import Start from '../components/auth/Start'
+import Start from '../components/main/Start'
 
 const StartPage: React.FC = ()=>{
   return(
