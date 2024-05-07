@@ -3,11 +3,11 @@
   margin: 0;
 }
 
-/* .headerNextBtn{
+.headerNextBtn{
   color: #686864;
   font-size: 18px;
   margin-left: 60%;
-}  */
+} 
 
 .WrapHeaderNextBtn {
   display: flex;
