@@ -15,6 +15,7 @@ const WritePost: React.FC = () => {
     if (inputValue.length <= 100) {
       //입력된 내용을 상태 저장
       setPostcontent(inputValue)
+      localStorage.setItem('postContent',inputValue)
     } else {
       //100이 넘어가면 초과 alert
       alert('글자수 초과')

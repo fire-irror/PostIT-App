@@ -1,0 +1,19 @@
+.selectImg,
+.postContent{
+  margin-top: 30%;
+}
+
+
+.selectImg{
+  padding: 3%;
+  width: 350px;
+  position: relative;
+
+}
+
+.postContent{
+  position: absolute;
+  top: 18%;
+  width: 200px;
+  left: 25%;
+}
