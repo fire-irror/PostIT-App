@@ -22,7 +22,7 @@ const WritePost: React.FC = () => {
   }
 
   const handleDoneBtn = () => {
-    navigate('/');
+    navigate('/result');
   }
 
   //남은 글자 수 계산

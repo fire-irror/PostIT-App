@@ -1,6 +1,6 @@
 import BackBtn from "../components/common/BackBtn"
 import Header from "../components/common/Header"
-import WritePost from "../components/writePost/WritePost"
+import WritePost from "../components/PostIt/WritePost"
 
 
 const WritePostPage: React.FC = () =>{

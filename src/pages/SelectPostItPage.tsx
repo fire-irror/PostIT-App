@@ -1,4 +1,4 @@
-import SelectPostIt from "../components/selectPostIt/SelectPostIt"
+import SelectPostIt from "../components/PostIt/SelectPostIt"
 import Header from "../components/common/Header";
 
 const SelectPostItPage: React.FC = () =>{
