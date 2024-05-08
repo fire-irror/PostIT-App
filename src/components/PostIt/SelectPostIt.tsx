@@ -15,6 +15,7 @@ const postImages = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8];
 //result에서 해당 이미지를 가져오기 위해 export시켜줌
 export {postImages};
 
+
 const SelectPostIt: React.FC = () => {
   //사용자가 선택한 이미지 상태 나타내기 초기값 -> null
   const [selectImg, setSelectImg] = useState<string | null>(null)
