@@ -32,6 +32,10 @@ const Result: React.FC = () => {
       {postContent && (
         <p className={styles.postContent}>{postContent}</p>
       )}
+
+      <div className={styles.WrapDoneBtn}>
+      <button className={styles.DoneBtn}>작성완료</button>
+      </div>
     </div>
   );
 }
