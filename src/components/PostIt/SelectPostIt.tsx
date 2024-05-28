@@ -13,8 +13,7 @@ import { useState } from 'react'
 const postImages = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8];
 
 //result에서 해당 이미지를 가져오기 위해 export시켜줌
-export {postImages};
-
+export { postImages };
 
 const SelectPostIt: React.FC = () => {
   //사용자가 선택한 이미지 상태 나타내기 초기값 -> null
@@ -22,7 +21,7 @@ const SelectPostIt: React.FC = () => {
   // const navigate = useNavigate()
 
   //인덱스로 로컬 스토리지에 이미지 저장하기
-  const handleImageClick = (index : number) =>{
+  const handleImageClick = (index: number) => {
     localStorage.setItem('selectedImageIndex', index.toString())
     setSelectImg(postImages[index])
   }
@@ -44,7 +43,6 @@ const SelectPostIt: React.FC = () => {
             className={styles[`post${index + 1}`]}
             //이미지 대체 텍스트 지정
             alt={`Post ${index + 1}`}
-
             //클릭했을 때 사용자가 클릭한 이미지가 나오게
             onClick={() => {
               handleImageClick(index)
@@ -62,4 +60,5 @@ const SelectPostIt: React.FC = () => {
     </div>
   )
 }
+
 export default SelectPostIt;

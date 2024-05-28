@@ -27,7 +27,7 @@ const Result: React.FC = () => {
 
   const [showModel, setShowModel] = useState(false);
 
-  const handleGoMain = () =>{
+  const handleGoMain = () => {
     nav('/start')
   }
 
@@ -55,7 +55,7 @@ const Result: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       {selectImg && (
         <img src={selectImg} className={styles.selectImg} />
       )}
@@ -70,35 +70,37 @@ const Result: React.FC = () => {
       {showModel && (
         <div className={styles.modal}>
           <div className={styles.modalcontent}>
+          <div className={styles.wrapImg}>
+              {selectedImageIndex === '0' && (
+                <img src={post1_result} className={styles.res1} />
+              )}
+              {selectedImageIndex === '1' && (
+                <img src={post2_result} className={styles.res2} />
+              )}
+              {selectedImageIndex === '2' && (
+                <img src={post3_result} className={styles.res3} />
+              )}
+              {selectedImageIndex === '3' && (
+                <img src={post4_result} className={styles.res4} />
+              )}
+              {selectedImageIndex === '4' && (
+                <img src={post5_result} className={styles.res5} />
+              )}
+              {selectedImageIndex === '5' && (
+                <img src={post6_result} className={styles.res6} />
+              )}
+              {selectedImageIndex === '6' && (
+                <img src={post7_result} className={styles.res7} />
+              )}
+              {selectedImageIndex === '7' && (
+                <img src={post8_result} className={styles.res8} />
+              )}
+            </div>
             <p className={styles.modaltitle}>포스트잇 등록 완료!</p>
             <p className={styles.content}>PC 화면을 봐보세요! 방금<br /> 등록한 포스트잇이 있을거에요~</p>
             <div className={styles.wrapBtn}>
               <button className={styles.goMain} onClick={handleGoMain}>메인으로 이동</button>
             </div>
-            {selectedImageIndex === '0' && (
-              <img src={post1_result} className={styles.res1} />
-            )}
-            {selectedImageIndex === '1' && (
-              <img src={post2_result} className={styles.res2} />
-            )}
-            {selectedImageIndex === '2' && (
-              <img src={post3_result} className={styles.res3} />
-            )}
-            {selectedImageIndex === '3' && (
-              <img src={post4_result} className={styles.res4} />
-            )}
-            {selectedImageIndex === '4' && (
-              <img src={post5_result} className={styles.res5} />
-            )}
-            {selectedImageIndex === '5' && (
-              <img src={post6_result} className={styles.res6} />
-            )}
-            {selectedImageIndex === '6' && (
-              <img src={post7_result} className={styles.res7} />
-            )}
-            {selectedImageIndex === '7' && (
-              <img src={post8_result} className={styles.res8} />
-            )}
           </div>
         </div>
       )}

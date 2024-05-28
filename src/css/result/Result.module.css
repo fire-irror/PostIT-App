@@ -1,33 +1,34 @@
+body {
+  font-family: 'NanumSquareNeoBold';
+}
 
-body{
-  font-family: 'NanumSquareNeoBold'
+.container {
+  text-align: center;
 }
 
 .selectImg,
-.postContent{
+.postContent {
   margin-top: 30%;
 }
 
-
-.selectImg{
+.selectImg {
   padding: 3%;
-  width: 350px;
+  width: 90vw;
   position: relative;
-
 }
 
-.postContent{
+.postContent {
   position: absolute;
   top: 22%;
   width: 200px;
   left: 25%;
 }
 
-.WrapDoneBtn{
+.WrapDoneBtn {
   text-align: center;
 }
 
-.DoneBtn{
+.DoneBtn {
   background-color: #12619C;
   color: #fff;
   border-radius: 16px;
@@ -42,46 +43,46 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5); /* 반투명한 검은 배경 */
   display: flex;
   justify-content: center;
-  
+  align-items: center; /* Center the modal vertically */
 }
 
 .modalcontent {
   background-color: white;
-  margin-top: 45%;
-  height: 48%;
-  width: 83%;
+  width: 83vw;
+  height: 48vh;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
-.goMain{
+.goMain {
   background-color: #EFEFEF;
   padding: 6%;
   width: 100%;
-  margin-top: 10%;
-  border-color: #CDCDCB;
-  border-style: solid;
+  border: none;
+  border-top: 1px solid #CDCDCB;
   color: #9A9A99;
-}
-
-.goMain{
+  text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  align-self: flex-end; 
 }
 
-.modaltitle{
+.modaltitle {
   font-family: 'NanumSquareNeoBold';
-  text-align: center;
-  margin-top: 73%;
+  margin-top: 5vh;
   color: #12619C;
   font-weight: bold;
+  text-align: center;
 }
 
-.content{
+.content {
   font-family: 'NanumSquareNeo';
   text-align: center;
   color: #616161;
@@ -89,6 +90,7 @@ body{
   margin-top: 5%;
   line-height: 20px;
   letter-spacing: 1.5px;
+  margin-bottom: 4vh;
 }
 
 .res1,
@@ -98,8 +100,7 @@ body{
 .res5,
 .res6,
 .res7,
-.res8{
-  position: absolute;
-  top: 26%;
-  margin-left: 16%;
+.res8 {
+  position: relative;
+  margin-top: 5vh;
 }

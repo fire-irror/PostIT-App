@@ -1,13 +1,12 @@
-
-.content{
+.content {
   position: absolute;
-  bottom: 0; /* 하단으로 이동 */
+  bottom: 0; 
   background-color: #e2e2e2;
   height: 290px;
-  width: 375px;
+  width: 100vw;
 }
 
-.selectPost{
+.selectPost {
   background-color: #FFE16F;
   width: 25%;
   border-radius: 5px;
@@ -17,11 +16,14 @@
   margin: 4.5%;
 }
 
-.wrapPostImg{
+.wrapPostImg {
   position: absolute;
   bottom: 20px;
   text-align: center;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .post1,
@@ -31,21 +33,16 @@
 .post5,
 .post6,
 .post7,
-.post8{
-  margin: 1.5%;
+.post8 {
+  width: 22%;
+  cursor: pointer;
 }
 
-.post5,
-.post6,
-.post7,
-.post8{
-  margin-top: 4%;
-}
-
-.WrapSelectImg{
+.WrapSelectImg {
   text-align: center;
-  margin-top: 17%;
+  margin-top: 10vh;
 }
-.selectImg{
-  width: 90%;
+
+.selectImg {
+  width: 90vw;
 }
