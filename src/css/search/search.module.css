@@ -1,0 +1,47 @@
+.container{
+  text-align: center;
+  position: relative;
+}
+
+.logo{
+  height: 4.5vh;
+  margin: 3vh;
+}
+
+.searchInput{
+  width: 85vw;
+  height: 4.5vh;
+  border-radius: 1vh;
+  background-color:#EFEFEF;
+  border: none;
+  padding: 1vw;
+  padding-left: 3vw;
+  
+}
+
+.searchInput::placeholder{
+  color: #BCBCBC;
+}
+
+.searchInput:focus{
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  color: #000;
+}
+
+.searchImg{
+  position: absolute;
+  right: 10vw; 
+  margin-top: 1.2vh;
+}
+
+.title{
+  font-family: 'NanumGothicBold';
+  font-size: 18px;
+  color: #515151;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 5.5vw;
+  margin-top: 2vh;
+}
