@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const WritePost: React.FC = () => {
 
   //포스트잇의 내용을 저장하기 위함
-  const [postContent, setPostcontent] = useState<String>('');
+  const [postContent, setPostcontent] = useState('');
 
   const navigate = useNavigate()
 
