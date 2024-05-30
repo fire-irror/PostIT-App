@@ -1,47 +1,114 @@
-.container{
+.container {
   text-align: center;
   position: relative;
 }
 
-.logo{
+.logo {
   height: 4.5vh;
   margin: 3vh;
 }
 
-.searchInput{
+.searchInput {
   width: 85vw;
   height: 4.5vh;
   border-radius: 1vh;
-  background-color:#EFEFEF;
+  background-color: #EFEFEF;
   border: none;
   padding: 1vw;
   padding-left: 3vw;
-  
 }
 
-.searchInput::placeholder{
+.searchInput::placeholder {
   color: #BCBCBC;
 }
 
-.searchInput:focus{
+.searchInput:focus {
   border-style: solid;
   border-width: 1px;
   outline: none;
   color: #000;
 }
 
-.searchImg{
+.searchImg {
   position: absolute;
-  right: 10vw; 
+  right: 10vw;
   margin-top: 1.2vh;
 }
 
-.title{
+.title,
+.title1 {
   font-family: 'NanumGothicBold';
-  font-size: 18px;
-  color: #515151;
-  font-weight: bold;
+  font-size: 14px;
+  color: #000;
   text-align: left;
-  margin-left: 5.5vw;
+  margin-left: 6vw;
   margin-top: 2vh;
+}
+
+.title1{
+  margin-top: 7vh;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
+}
+
+.wrapCategory {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+  margin-top: 1vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+.button {
+  font-size: 12px;
+  border-radius: 2vh;
+  margin-top: 1vh;
+  padding: 0.8vh;
+  border: solid #CDCDCB;
+  border-width: 1px;
+}
+
+.active {
+  background-color: #12619C;
+  color: white;
+  border: none;
+}
+
+.wrapData{
+  display: grid;
+  grid-template-columns: repeat(2, 0.48fr);
+  justify-content: center;
+  margin-left: 2vw;
+  gap: 8vw;
+}
+
+.wrapContent{
+  border: solid #D9D9D9 1px;
+  width: 41.33vw;
+  height: 19.46vh;
+  border-radius: 1vh;
+}
+
+.image{
+  width: 41.33vw;
+  height: 12.32vh;
+  z-index: 100;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+}
+
+.wrapText{
+  text-align: left;
+  margin-left: 2vw;
+  margin-top: 0.5vh;
+}
+
+.name{
+  font-size: 10px;
+}
+.teamName{
+  font-size: 7.5px;
+  margin-top: 3vh;
+  color: #515151;
 }
