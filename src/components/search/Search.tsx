@@ -3,6 +3,7 @@ import styles from '../../css/search/search.module.css';
 import logo from '../../assets/logo.svg';
 import searchImg from '../../assets/search.svg';
 import axios from "axios";
+import data from "../../../data.json"
 
 interface UserData {
   name: string;
@@ -29,15 +30,22 @@ const categories = [
 const Search: React.FC = () => {
   const [activeButton, setActiveButton] = useState<string>("");
   const [userData, setUserData] = useState<UserData[]>([]);
+  const [searchInput, setSearchInput] = useState<string>("");
+  const [filteredData, setFilteredData] = useState<UserData[]>(data);
 
   useEffect(() => {
-    axios.get('data.json').then(response => {
-      setUserData(response.data)
-    })
-      .catch(e => {
-        console.error(e)
-      })
-  }, [])
+    setUserData(filteredData);
+  }, []);
+
+  const handleSearch = () => {
+    if (searchInput === "") {
+      alert("검색어를 입력하세요");
+    } else {
+      const filtered = data.filter(item => item.name.includes(searchInput));
+      setUserData(filtered);
+    }
+    console.log(userData);
+  };
 
   return (
     <div className={styles.container}>
@@ -46,8 +54,10 @@ const Search: React.FC = () => {
       <input
         className={styles.searchInput}
         placeholder="검색어를 입력해주세요"
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
       />
-      <img src={searchImg} className={styles.searchImg} alt="search" />
+      <img src={searchImg} className={styles.searchImg} alt="search" onClick={handleSearch} />
       <p className={styles.title}>검색 카테고리</p>
 
       <div className={styles.wrapCategory}>
