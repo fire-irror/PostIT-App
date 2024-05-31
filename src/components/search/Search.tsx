@@ -63,6 +63,16 @@ const Search: React.FC = () => {
     }
   };
 
+  const handleRecommendCategory = (type: string) =>{
+    const filtered = data.filter(item =>item.type.includes(type));
+    navigate("/search/result", { state: { userData: filtered, inputValue: type}})
+  }
+
+  const handleContenetCategory = (concept: string) =>{
+    const filtered = data.filter(item =>item.concept.includes(concept));
+    navigate("/search/result", { state: { userData: filtered, inputValue: concept}})
+  }
+
   const handleSelectPage = (name: string) => {
     localStorage.setItem("name", name);
     navigate("/select");
@@ -86,7 +96,7 @@ const Search: React.FC = () => {
           <button
             key={category.name}
             className={`${styles.button} ${activeButton === category.name ? styles.active : ""} ${styles[category.size]}`}
-            onClick={() => setActiveButton(category.name)}
+            onClick={() => handleRecommendCategory(category.label)}
           >
             {category.label}
           </button>
@@ -99,7 +109,7 @@ const Search: React.FC = () => {
           <button
             key={category.name}
             className={`${styles.button} ${activeButton === category.name ? styles.active : ""} ${styles[category.size]}`}
-            onClick={() => setActiveButton(category.name)}
+            onClick={() => handleContenetCategory(category.label)}
           >
             {category.label}
           </button>
