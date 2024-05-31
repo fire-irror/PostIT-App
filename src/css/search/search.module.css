@@ -51,22 +51,40 @@
   margin-bottom: 3vh;
 }
 
-.wrapCategory {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1vw;
-  margin-top: 1vh;
-  margin-left: 6vw;
+.wrapCategory,
+.wrapCategory1 {
+  display: flex;
+  gap: 2.5vw;
+  margin-left: 5.2vw;
   margin-right: 6vw;
+}
+
+.wrapCategory1 {
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .button {
   font-size: 12px;
   border-radius: 2vh;
   margin-top: 1vh;
-  padding: 0.8vh;
+  padding: 0.5vh;
   border: solid #CDCDCB;
   border-width: 1px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.button.l{
+  width: 21vw;
+}
+
+.button.m {
+  width: 16vw;
+}
+
+.button.s {
+  width: 10vw;
 }
 
 .active {

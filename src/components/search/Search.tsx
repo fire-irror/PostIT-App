@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from '../../css/search/search.module.css';
 import logo from '../../assets/logo.svg';
 import searchImg from '../../assets/search.svg';
-import axios from "axios";
 import data from "../../../data.json"
 
 interface UserData {
@@ -19,22 +18,27 @@ interface UserData {
 }
 
 const categories = [
-  { name: "workname", label: "작품 이름" },
-  { name: "stuName", label: "학생 이름" },
-  { name: "concept", label: "부스 주제" },
-  { name: "web", label: "웹사이트" },
-  { name: "app", label: "앱" },
-  { name: "game", label: "게임" }
+  { name: "web", label: "웹사이트", size: "l" },
+  { name: "app", label: "앱", size: "s" },
+  { name: "game", label: "게임", size: "m" }
 ];
+
+const categories1 = [
+  { name: "rest", label: "쉼표", size: "m" },
+  { name: "doubleQuotes", label: "쌍따옴표", size: "l" },
+  { name: "ExclamationMark", label: "느낌표", size: "m" },
+  { name: "period", label: "온점", size: "m" },
+  { name: "global", label: "글로벌", size: "m" },
+  { name: "club", label: "동아리", size: "m" }
+]
 
 const Search: React.FC = () => {
   const [activeButton, setActiveButton] = useState<string>("");
   const [userData, setUserData] = useState<UserData[]>([]);
   const [searchInput, setSearchInput] = useState<string>("");
-  const [filteredData, setFilteredData] = useState<UserData[]>(data);
 
   useEffect(() => {
-    setUserData(filteredData);
+    setUserData(data);
   }, []);
 
   const handleSearch = () => {
@@ -53,7 +57,7 @@ const Search: React.FC = () => {
 
       <input
         className={styles.searchInput}
-        placeholder="검색어를 입력해주세요"
+        placeholder="작품 이름 혹은 학생 이름을 입력하세요"
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
       />
@@ -64,15 +68,28 @@ const Search: React.FC = () => {
         {categories.map((category) => (
           <button
             key={category.name}
-            className={`${styles.button} ${activeButton === category.name ? styles.active : ""}`}
+            className={`${styles.button} ${activeButton === category.name ? styles.active : ""} ${styles[category.size]}`}
             onClick={() => setActiveButton(category.name)}
           >
             {category.label}
           </button>
         ))}
       </div>
-      <p className={styles.title1}>전체보기</p>
 
+      <p className={styles.title}>부스 주제</p>
+      <div className={styles.wrapCategory1}>
+        {categories1.map((category) => (
+          <button
+            key={category.name}
+            className={`${styles.button} ${activeButton === category.name ? styles.active : ""} ${styles[category.size]}`}
+            onClick={() => setActiveButton(category.name)}
+          >
+            {category.label}
+          </button>
+        ))}
+      </div>
+
+      <p className={styles.title1}>전체보기</p>
 
       <div className={styles.wrapData}>
         {userData.map((item, index) => (
