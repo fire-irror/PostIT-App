@@ -32,7 +32,7 @@
         "type": "앱",
         "image": "../../src/assets/logo/시험메이트.png"
     },
-    {
+        {
         "name": "위드미어(withmere)",
         "concept": "쉼표",
         "team1": "김혜승, ",
@@ -60,7 +60,7 @@
         "team1": "양미성, ",
         "team2": "김한솔, ",
         "team3": "한수예, ",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/Curl Fume.png"
     },
     {
@@ -69,7 +69,7 @@
         "team1": "문혜빈, ",
         "team2": "임소영, ",
         "team3": "한수예, ",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/달빛타로.png"
     },
     {
@@ -154,7 +154,7 @@
         "team4": "김서연,",
         "team5": "박효정,",
         "team6": "유지민",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/고민(Go mean).png"
     },
     {
@@ -163,14 +163,14 @@
         "team1": "박화경,",
         "team2": "정선영,",
         "team3": "조혜원",
-        "type": "앱 웹",
+        "type": "앱 웹사이트",
         "image": "../../src/assets/logo/Post It.svg"
     },
     {
         "name": "달콤조각",
         "concept": "쉼표",
         "team1": "김예향",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/달콤조각.png"
     },
     {
@@ -183,7 +183,7 @@
         "team5": "이해원,",
         "team6": "조서현,",
         "team7": "황혜경",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/오 은영체제.png"
     },
     {
@@ -194,7 +194,7 @@
         "team3": "김하은,",
         "team4": "이해원,",
         "team5": "임효진",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/타임캡슐.svg"
     },
     {
@@ -235,7 +235,7 @@
         "team2": "윤민서,",
         "team3": "최지설,",
         "team4": "이솔희",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/어썹(Earth-up).png"
     },
     {
@@ -244,7 +244,7 @@
         "team1": "이설화,",
         "team2": "이가현,",
         "team3": "서유미",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/GEMMI.png"
     },
     {
@@ -264,7 +264,7 @@
         "team2": "오수빈,",
         "team3": "이현지,",
         "team4": "김민주",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/미림 나락퀴즈쇼.png"
     },
     {
@@ -292,7 +292,7 @@
         "team2": "김서연,",
         "team3": "최보람,",
         "team4": "황혜경",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/벼룩이.png"
     },
     {
@@ -304,7 +304,7 @@
         "team4": "조서현,",
         "team5": "황채원,",
         "team6": "이유진",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/홀로서기(LivingAlone).png"
     },
     {
@@ -322,7 +322,7 @@
         "team1": "이윤경,",
         "team2": "임한별,",
         "team3": "방민서",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/너의 오늘은.png"
     },
     {
@@ -378,7 +378,7 @@
         "team2": "김지우,",
         "team3": "김희영,",
         "team4": "노현지",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/Pin!tage(핀티지).png"
     },
     {
@@ -400,7 +400,7 @@
         "team4": "배주연,",
         "team5": "송유빈,",
         "team6": "하지민",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/하나,둘,셋! 과거의 나에게.jpg"
     },
     {
@@ -422,7 +422,7 @@
         "team2": "박희현,",
         "team3": "이가현,",
         "team4": "임지현",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/이 구역의 댄싱퀸은 나야나.png"
     },
     {
@@ -432,7 +432,7 @@
         "team2": "양혜원,",
         "team3": "조수빈,",
         "team4": "백지현",
-        "type": "웹",
+        "type": "웹사이트",
         "image": "../../src/assets/logo/난너없이.png"
     },
     {
