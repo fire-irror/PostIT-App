@@ -5,6 +5,7 @@ import SelectPostItPage from './pages/SelectPostItPage'
 import SplashScreenPage from './pages/SplashScreenPage'
 import StartPage from './pages/StartPage'
 import WritePostPage from './pages/WritePostPage'
+import SearchResultPage from './pages/SearchResultPage'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/write" element={< WritePostPage/>} />
       <Route path="/result" element={< ResultPage/>} />
       <Route path="/search" element={< SearchPage/>} />
+      <Route path="/search/result" element={< SearchResultPage/>} />
     </Routes>
   )
 }
