@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from '../../css/search/search.module.css';
 import logo from '../../assets/logo.svg';
 import searchImg from '../../assets/search.svg';
@@ -38,6 +39,8 @@ const Search: React.FC = () => {
   const [userData, setUserData] = useState<UserData[]>([]);
   const [searchInput, setSearchInput] = useState<string>("");
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     setUserData(data);
   }, []);
@@ -46,10 +49,18 @@ const Search: React.FC = () => {
     if (searchInput === "") {
       alert("검색어를 입력하세요");
     } else {
-      const filtered = data.filter(item => item.name.includes(searchInput));
-      setUserData(filtered);
+      const filtered = data.filter(item =>
+        item.name.includes(searchInput) ||
+        item.team1.includes(searchInput) ||
+        (item.team2 && item.team2.includes(searchInput)) ||
+        (item.team3 && item.team3.includes(searchInput)) ||
+        (item.team4 && item.team4.includes(searchInput)) ||
+        (item.team5 && item.team5.includes(searchInput)) ||
+        (item.team6 && item.team6.includes(searchInput)) ||
+        (item.team7 && item.team7.includes(searchInput))
+      ); 
+      navigate("/search/result", { state: { userData: filtered, inputValue: searchInput } })
     }
-    console.log(userData);
   };
 
   return (
