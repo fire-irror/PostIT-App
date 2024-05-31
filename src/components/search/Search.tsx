@@ -13,6 +13,7 @@ interface UserData {
   team4?: string;
   team5?: string;
   team6?: string;
+  team7?: string;
   type: string;
   image: string;
 }
@@ -98,7 +99,7 @@ const Search: React.FC = () => {
 
             <div className={styles.wrapText}>
               <p className={styles.name}>{item.name}</p>
-              <p className={styles.teamName}>{item.team1} {item.team2} {item.team3} {item.team4} {item.team5} {item.team6}</p>
+              <p className={styles.teamName}>{item.team1} {item.team2} {item.team3} {item.team4} {item.team5} {item.team6} {item.team7}</p>
             </div>
           </div>
         ))}
