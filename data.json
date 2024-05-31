@@ -8,7 +8,7 @@
         "team4": "정선영, ",
         "team5": "김민지",
         "type": "앱",
-        "image": "../../src/assets/logo/피니(pinny).svg"
+        "image": "../../src/assets/logo/피니(pinny).png"
     },
     {
         "name": "mtom",
@@ -42,7 +42,7 @@
         "team5": "이지인, ",
         "team6": "윤호주",
         "type": "앱",
-        "image": "../../src/assets/logo/위드미어(withmere).svg"
+        "image": "../../src/assets/logo/위드미어(withmere).png"
     },
     {
         "name": "Pinata Party",
@@ -171,7 +171,7 @@
         "concept": "쉼표",
         "team1": "김예향",
         "type": "웹",
-        "image": "../../src/assets/logo/달콤조각.jpg"
+        "image": "../../src/assets/logo/달콤조각.png"
     },
     {
         "name": "오! 은영체제",
@@ -342,7 +342,7 @@
         "team2": "정선영",
         "team3": "박효정",
         "type": "앱",
-        "image": "../../src/assets/logo/YANU!.svg"
+        "image": "../../src/assets/logo/YANU!.png"
     },
     {
         "name": "두런두런",
@@ -443,7 +443,7 @@
         "team3": "이윤경",
         "team4": "송연우",
         "type": "게임",
-        "image": "../../src/assets/logo/이상한 미림의 나라.svg"
+        "image": "../../src/assets/logo/이상한 미림의 나라.png"
     },
     {
         "name": "미스토리",
@@ -455,6 +455,6 @@
         "team5": "박은진",
         "team6": "지수연",
         "type": "게임",
-        "image": "../../src/assets/logo/미스토리.jpg"
+        "image": "../../src/assets/logo/미스토리.png"
     }
 ]
