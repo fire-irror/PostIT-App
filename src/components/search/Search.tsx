@@ -58,10 +58,15 @@ const Search: React.FC = () => {
         (item.team5 && item.team5.includes(searchInput)) ||
         (item.team6 && item.team6.includes(searchInput)) ||
         (item.team7 && item.team7.includes(searchInput))
-      ); 
+      );
       navigate("/search/result", { state: { userData: filtered, inputValue: searchInput } })
     }
   };
+
+  const handleSelectPage = (name: string) => {
+    localStorage.setItem("name", name);
+    navigate("/select");
+  }
 
   return (
     <div className={styles.container}>
@@ -74,7 +79,7 @@ const Search: React.FC = () => {
         onChange={(e) => setSearchInput(e.target.value)}
       />
       <img src={searchImg} className={styles.searchImg} alt="search" onClick={handleSearch} />
-      <p className={styles.title}>검색 카테고리</p>
+      <p className={styles.title}>추천 검색어</p>
 
       <div className={styles.wrapCategory}>
         {categories.map((category) => (
@@ -105,7 +110,7 @@ const Search: React.FC = () => {
 
       <div className={styles.wrapData}>
         {userData.map((item, index) => (
-          <div key={index} className={styles.wrapContent}>
+          <div key={index} className={styles.wrapContent} onClick={() => handleSelectPage(item.name)}>
             <img src={item.image} alt={item.name} className={styles.image} />
 
             <div className={styles.wrapText}>
