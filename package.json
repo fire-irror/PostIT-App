@@ -16,6 +16,7 @@
     "firebase": "^10.11.1",
     "react": "^19.0.0-beta-b498834eab-20240506",
     "react-dom": "^19.0.0-beta-b498834eab-20240506",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.0",
     "uid": "^2.0.2"
   },

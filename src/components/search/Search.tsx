@@ -35,7 +35,7 @@ const categories1 = [
 ]
 
 const Search: React.FC = () => {
-  const [activeButton, setActiveButton] = useState<string>("");
+  const [activeButton] = useState<string>("");
   const [userData, setUserData] = useState<UserData[]>([]);
   const [searchInput, setSearchInput] = useState<string>("");
 
