@@ -63,6 +63,11 @@ const SearchResult: React.FC = () => {
         }
     };
 
+    const handleSelectPage = (name: string) => {
+        localStorage.setItem("name", name);
+        navigate("/select");
+    }
+
     return (
         <div className={styles.container}>
             <img src={logo} className={styles.logo} alt="logo" />
@@ -82,7 +87,7 @@ const SearchResult: React.FC = () => {
 
             <div className={styles.wrapData}>
                 {userDataResult.map((item, index) => (
-                    <div key={index} className={styles.wrapContent}>
+                    <div key={index} className={styles.wrapContent} onClick={() => handleSelectPage(item.name)}>
                         <img src={item.image} alt={item.name} className={styles.image} />
 
                         <div className={styles.wrapText}>
