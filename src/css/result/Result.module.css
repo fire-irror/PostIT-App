@@ -45,10 +45,10 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* 반투명한 검은 배경 */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the modal vertically */
+  align-items: center; 
 }
 
 .modalcontent {

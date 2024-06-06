@@ -46,7 +46,7 @@
 
 .wrapData {
     display: grid;
-    grid-template-columns: repeat(2, 0.48fr);
+    grid-template-columns: repeat(2, 5fr);
     justify-content: center;
     margin-left: 2vw;
     gap: 8vw;
