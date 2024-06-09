@@ -18,12 +18,13 @@ import post8_result from "../../assets/post8_result.svg";
 
 
 const Result: React.FC = () => {
-  const selectedImageIndex = localStorage.getItem('selectedImageIndex')
+  const selectedImageIndex = localStorage.getItem('selectedImageIndex');
 
   const nav = useNavigate()
   // 선택한 이미지 저장 상태 
   const [selectImg, setSelectImg] = useState<string | null>(null);
   const [postContent, setPostcontent] = useState<string | null>(null);
+  const [postName, setPostName] = useState<string | null>(null);
 
   const [showModel, setShowModel] = useState(false);
 
@@ -44,14 +45,19 @@ const Result: React.FC = () => {
     setPostcontent(savePostContent);
   }, []);
 
+  useEffect(() => {
+    const savePostName = localStorage.getItem('name');
+    setPostName(savePostName);
+  }, []);
+
   const writeData = () => {
     const uuid = uid();
     set(ref(db, 'postit/' + uuid), {
       img: selectImg,
-      content: postContent
+      content: postContent,
+      name: postName,
     });
     setShowModel(true);
-    alert('성공');
   }
 
   return (
