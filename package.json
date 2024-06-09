@@ -1,6 +1,7 @@
 {
   "name": "postit-app",
   "private": true,
+  "homepage": "https://fire-irror.github.io/PostIT-App",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
