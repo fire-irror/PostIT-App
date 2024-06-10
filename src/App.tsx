@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ResultPage from './pages/ResultPage'
 import SearchPage from './pages/SearchPage'
 import SelectPostItPage from './pages/SelectPostItPage'
@@ -10,15 +10,15 @@ import SearchResultPage from './pages/SearchResultPage'
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={< SplashScreenPage/>} />
-      <Route path="/start" element={< StartPage/>} />
-      <Route path="/select" element={< SelectPostItPage/>} />
-      <Route path="/write" element={< WritePostPage/>} />
-      <Route path="/result" element={< ResultPage/>} />
-      <Route path="/search" element={< SearchPage/>} />
-      <Route path="/search/result" element={< SearchResultPage/>} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={< SplashScreenPage />} />
+        <Route path="/start" element={< StartPage />} />
+        <Route path="/select" element={< SelectPostItPage />} />
+        <Route path="/write" element={< WritePostPage />} />
+        <Route path="/result" element={< ResultPage />} />
+        <Route path="/search" element={< SearchPage />} />
+        <Route path="/search/result" element={< SearchResultPage />} />
+      </Routes>
   )
 }
 
