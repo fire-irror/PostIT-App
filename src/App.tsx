@@ -7,6 +7,7 @@ import StartPage from './pages/StartPage'
 import WritePostPage from './pages/WritePostPage'
 import SearchResultPage from './pages/SearchResultPage'
 
+
 function App() {
 
   return (
