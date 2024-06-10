@@ -1,7 +1,6 @@
 {
   "name": "postit-app",
   "private": true,
-  "homepage": "https://fire-irror.github.io/PostIT-App",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/firebase": "^3.2.1",
