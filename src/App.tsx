@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import ResultPage from './pages/ResultPage'
 import SearchPage from './pages/SearchPage'
 import SelectPostItPage from './pages/SelectPostItPage'
