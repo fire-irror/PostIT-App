@@ -8,7 +8,6 @@ import Post6 from '../../assets/post6.svg'
 import Post7 from '../../assets/post7.svg'
 import Post8 from '../../assets/post8.svg'
 import { useState } from 'react'
-// import { useNavigate } from 'react-router-dom'
 
 const postImages = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8];
 

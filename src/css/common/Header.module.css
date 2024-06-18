@@ -6,17 +6,21 @@
 .headerNextBtn{
   color: #686864;
   font-size: 18px;
-  margin-left: 60%;
+  margin-left: 63vw;
 } 
 
 .WrapHeaderNextBtn {
   display: flex;
   align-items: center; 
-  margin-top: 10%;
+  margin-top: 3vh;
 }
 
 .backBtn {
-  margin-right: 10px;
-  margin-left: 8.5%;
+  margin-right: 10vw;
+  margin-left: 5vw;
+}
+
+.homeBtn{
+  margin-left: 65vw;
 }
 

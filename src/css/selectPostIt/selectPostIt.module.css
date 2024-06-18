@@ -1,29 +1,29 @@
 .content {
   position: absolute;
   bottom: 0; 
-  background-color: #e2e2e2;
-  height: 290px;
+  background-color: #e2e2e272;
+  height: 30vh;
   width: 100vw;
 }
 
 .selectPost {
-  background-color: #FFE16F;
-  width: 25%;
-  border-radius: 5px;
-  padding: 2%;
+  border-radius: 1vh;
   font-size: 11px;
   text-align: center;
-  margin: 4.5%;
+  margin-top: 28vh;
+  text-align: right;
+  margin-right: 4vw;
+  color: rgba(142, 142, 142, 0.544);
 }
 
 .wrapPostImg {
   position: absolute;
-  bottom: 20px;
+  bottom: 3vh;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 2vw;
 }
 
 .post1,
@@ -34,13 +34,13 @@
 .post6,
 .post7,
 .post8 {
-  width: 22%;
+  width: 22vw;
   cursor: pointer;
 }
 
 .WrapSelectImg {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 
 .selectImg {
