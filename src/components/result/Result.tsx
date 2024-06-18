@@ -51,14 +51,15 @@ const Result: React.FC = () => {
   }, []);
 
   const writeData = () => {
-    const uuid = uid();
-    set(ref(db, 'postit/' + uuid), {
+    const timestamp = new Date().toISOString().replace(/[-:.]/g, '');
+
+    set(ref(db, 'postit/' + timestamp), {
       img: selectImg,
       content: postContent,
       name: postName,
     });
     setShowModel(true);
-  }
+  };
 
   return (
     <div className={styles.container}>
