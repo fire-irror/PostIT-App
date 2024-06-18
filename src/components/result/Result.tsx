@@ -4,6 +4,7 @@ import { postImages } from "../PostIt/SelectPostIt";
 import { useNavigate } from 'react-router-dom';
 import { db } from "../../firebase/config";
 import { useEffect, useState } from "react";
+import { uid } from "uid";
 
 // 이미지 import
 import post1_result from "../../assets/post1_result.svg";
@@ -50,23 +51,14 @@ const Result: React.FC = () => {
   }, []);
 
   const writeData = () => {
-    const timestamp = new Date().toISOString();
-    const postitData = {
+    const timestamp = new Date().toISOString().replace(/[-:.]/g, '');
+
+    set(ref(db, 'postit/' + timestamp), {
       img: selectImg,
       content: postContent,
       name: postName,
-      timestamp: timestamp 
-    };
-  
-    const postitRef = ref(db, '/postit');
-  
-    set(postitRef, postitData)
-      .then(() => {
-        setShowModel(true);
-      })
-      .catch((error) => {
-        console.error("Error writing document: ", error);
-      });
+    });
+    setShowModel(true);
   };
 
   return (
